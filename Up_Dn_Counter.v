@@ -1,8 +1,12 @@
 module Up_Dn_Counter (
-    input wire  CLK, Up, Down, Load,
+    input wire       CLK, 
+    input wire       Up,
+    input wire       Down,
+    input wire       Load,
     input wire [4:0] IN,
     output reg [4:0] Counter,
-    output High, Low
+    output wire      High,
+    output wire      Low
 );
     // internal signals
     reg [4:0] Counter_comb;
